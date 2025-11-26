@@ -1,0 +1,43 @@
+:root{
+	--red: #B43A3A;
+	--orange: #EE8A2E;
+	--yellow: #F1B94C;
+	--brown: #5B3926;
+	--white: #FFF9E9;
+	--black: #1C1818;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	color: var(--black);
+	scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+body{
+	background: var(--white);
+	margin: 0;
+}
+
+.regular{
+	font-weight: 400;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.black{
+	font-weight: 900;
+}
+
+@keyframes appear{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
