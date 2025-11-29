@@ -3,13 +3,14 @@
 	{#each pages.slice(1) as [_, title, link], i}
 		<a class="bold{between(scrollY / innerHeight - i, 0.5, 1.5) ? " active" : ""}" onclick={() => document.getElementById(link)?.scrollIntoView({ behavior: "smooth" })}>{title}</a>
 	{/each}
+	<a target="_blank" href="/teachers" class="bold">For teachers</a>
 </div>
 <div class="ribbonbg{scrollY > innerHeight - 100 ? " active" : ""}">
 	<img src="logo.png" alt="Logo" onclick={() => document.body.scrollIntoView({ behavior: "smooth" })}>
 </div>
 {#each pages as [Page, _, link, color], i}
 	<div class="fullscreen" style="top: {100 * i}vh; background: {color || "none"}" id="{link}">
-		<div style="display: block; position: relative; width: calc(100vw - 60px); height: calc(100vh - {!i ? 60 : 160}px); padding: 30px">
+		<div style="display: block; position: relative; width: 75vw; height: calc(100vh - {!i ? 0 : 100}px - 10vw); padding: 5vw 12.5vw">
 			<Page />
 		</div>
 	</div>

@@ -16,6 +16,13 @@
 	display: none;
 }
 
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 body{
 	background: var(--white);
 	margin: 0;
@@ -31,6 +38,15 @@ body{
 
 .black{
 	font-weight: 900;
+}
+
+a{
+	color: var(--orange);
+	font-weight: 600;
+}
+
+p{
+	font-size: 18px;
 }
 
 @keyframes appear{
