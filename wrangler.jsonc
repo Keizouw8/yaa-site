@@ -7,7 +7,14 @@
 		"directory": ".svelte-kit/cloudflare",
 		"binding": "ASSETS"
 	},
-	"observability": {
-		"enabled": true
-	}
+	"routes": [
+		{
+			"pattern": "yaareno.org",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.yaareno.org",
+			"custom_domain": true
+		}
+	]
 }
