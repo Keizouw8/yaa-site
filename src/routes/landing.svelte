@@ -1,7 +1,7 @@
 <div class="info">
 	<h1 class="title bold">Young Author's Anthology</h1>
-	<p class="subtitle">Quick 1-2 punch tagline explanation lorem ipsum dolor sit amet.</p>
-	<p style="margin-left: 25px;">Teacher? Click here.</p>
+	<p class="subtitle">A project for Washoe County Students by Washoe County students</p>
+	<!-- <p style="margin-left: 25px;">Teacher? Click here.</p> -->
 </div>
 <div class="fire" bind:this={fireContainer}>
 		<div class="flame" id="flame1"></div>
