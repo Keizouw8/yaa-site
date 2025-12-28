@@ -8,7 +8,7 @@
 {:else}
 	<center class="centered">
 		<h1>Mobile Site In-Progress</h1>
-		<p>Please visit the site on a desktop</p>
+		<p>Please visit this site on a computer</p>
 	</center>
 {/if}
 <script lang="ts">

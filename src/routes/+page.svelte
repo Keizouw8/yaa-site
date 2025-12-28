@@ -3,7 +3,7 @@
 	{#each pages.slice(1) as [_, title, link], i}
 		<a class="bold{between(scrollY / innerHeight - i, 0.5, 1.5) ? " active" : ""}" onclick={() => document.getElementById(link)?.scrollIntoView({ behavior: "smooth" })}>{title}</a>
 	{/each}
-	<a target="_blank" href="/teachers" class="bold">For teachers</a>
+	<!-- <a target="_blank" href="/teachers" class="bold">For teachers</a> -->
 </div>
 <div class="ribbonbg{scrollY > innerHeight - 100 ? " active" : ""}">
 	<img src="logo.png" alt="Logo" onclick={() => document.body.scrollIntoView({ behavior: "smooth" })}>

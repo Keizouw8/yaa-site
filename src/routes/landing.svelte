@@ -1,6 +1,6 @@
 <div class="info">
 	<h1 class="title bold">Young Author's Anthology</h1>
-	<p class="subtitle">A project for Washoe County Students by Washoe County students</p>
+	<p class="subtitle">A project for Washoe County students by Washoe County students</p>
 	<!-- <p style="margin-left: 25px;">Teacher? Click here.</p> -->
 </div>
 <div class="fire" bind:this={fireContainer}>
