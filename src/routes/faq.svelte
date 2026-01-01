@@ -12,7 +12,7 @@
 			</div>
 		{/each}
 </div>
-<span class="contactus">If you have any other questions, <a class="contact" onclick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>contact us</a>!</span>
+<!-- <span class="contactus">If you have any other questions, <a class="contact" onclick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>contact us</a>!</span> -->
 </div>
 <script lang="ts">
 	let active = $state(0);

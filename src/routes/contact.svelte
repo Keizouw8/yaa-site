@@ -23,7 +23,7 @@
 		<input class="email" type="email" placeholder="Email">
 		<button>Send</button>
 	</div>
-	<textarea placeholder={"Hi Ishan!\n\nYou're insanely hot\n\nXOXO,\nYour biggest fan ❤️"}></textarea>
+	<textarea placeholder={"Memo"}></textarea>
 </div>
 <script lang="ts">
 	import Fa from "svelte-fa";
