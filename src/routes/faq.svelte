@@ -8,11 +8,11 @@
 			<div class="qa{ active == i ? " active" : "" }" style="--qheight: {heights[i]?.[0]}px; --aheight: {heights[i]?.[1]}px;" onclick={() => active = i} >
 				<span class="show">∨</span>
 				<span class="q" bind:this={qElems[i]}>{question}</span>
-				<span class="a" bind:this={aElems[i]}>{answer}</span>
+				<span class="a" bind:this={aElems[i]}>{@html answer}</span>
 			</div>
 		{/each}
 </div>
-<!-- <span class="contactus">If you have any other questions, <a class="contact" onclick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>contact us</a>!</span> -->
+<span class="contactus">If you have any other questions, <a class="contact" onclick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>contact us</a>!</span>
 </div>
 <script lang="ts">
 	let active = $state(0);
@@ -24,18 +24,16 @@
 	$inspect(heights);
 
 	let questions: [string, string][] = [
-		["Are partnered schools given preference when students submit?",
-			"Not at all! Partnered schools are only to help show support for our program. Students from our team will go to their schools at the beginning of each competition year to give a short presentation so more elementary schoolers are aware of who we are. They will not receive judging preference when submitting, everyone is reviewed equally."],
 		["What genres do we submit?",
-			"Anything goes! All submissions have to be school appropriate with their content but genre does not affect likelihood of selection. We want stories that are complex and show an understanding of writing through strong prose, few grammatical errors, and imaginative plot."],
+			"Anything <u>fiction</u> goes! All submissions have to be school appropriate with their content but genre does not affect likelihood of selection. We want stories that are complex and show an understanding of writing through strong prose, few grammatical errors, and imaginative plot."],
 		["What if I don’t win? What then?",
 			"This program is not simply focused on recognizing creative writers but also to recognize people who want to write. Famous authors have dozens of stories about how their work was rejected by hundreds of publishers and agents before being accepted. To better show our admiration for everyone who participates in this event, all students who submit valid submissions according to our guidelines will have their names produced in the Editor’s Note on our anthology."],
-		["Who receives a copy of this anthology?",
-			"All winners will have their school libraries receive a copy. Partnered schools are given special exception where their school library will also be given a copy so more students can be inspired to submit again in the following competition term!"],
+		["Do winners receives a copy of this anthology?",
+			"Yes, all winners will receive a personal copy and their school libraries will receive a copy as well. Schools that don't have a winner will also be given a copy so more students can be inspired to submit again in the following competition term!"],
 		["Are these copies only physical?",
 			"Not at all! Physical copies are distributed across schools in Reno as per our policies listed above. However, a digital copy from each term will always be available for viewing on this website in our Winners section."],
 		["Do I have to submit a photo if I am selected as a winner?",
-			"We want to respect the privacy of any applicants who submit. While we will ask for a first and last name on our form, the photo is completely optional. Any anonymous winners will have a stock photo instead of their own picture. That being said, we want to give new students entering Elementary School the opportunity to see alumni from their school and the work they made! Please submit a photo if you are comfortable, but it will not affect chances of selection."],
+			"We want to respect the privacy of any applicants who submit. While we will ask for a first and last name on our form, the photo is completely optional. Any anonymous winners will have a stock photo instead of their own picture. That being said, we want to give new students entering elementary school the opportunity to see alumni from their school and the work they made! Please submit a photo if you are comfortable, but it will not affect chances of selection."],
 		["How is judging conducted?",
 			"We have a six-member judging team that will review each story and average our scores to determine placement. The name and photo of the student is purposefully omitted before we conduct a review to make sure we are only evaluating the story itself. For this reason, we ask in our Submission Guidelines that the name(s) or photo(s) of the entrant(s) are not placed into the short story document. Thank you."]
 	];

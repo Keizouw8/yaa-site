@@ -33,7 +33,7 @@
 	let pages: [Component, string, string, string?][] = [
 		[Landing, "", "", "var(--black)"],
 		[About, "About", "about"],
-		[Submit, "Submit", "submit"],
+		// [Submit, "Submit", "submit"],
 		[Winners, "Winners", "winners"],
 		[FAQ, "FAQ", "faq"],
 		[Contact, "Contact", "contact"]

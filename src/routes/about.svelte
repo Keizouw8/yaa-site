@@ -34,6 +34,7 @@
 		position: absolute;
 		width: calc(60% - 10vw);
 		right: 5vw;
-		top: 5vw;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 </style>
