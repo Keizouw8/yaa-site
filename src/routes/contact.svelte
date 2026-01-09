@@ -1,13 +1,13 @@
 <div class="container">
 	<div>
 		<h1>Let's get in touch!</h1>
-		<p>To any Elementary Schools interested in partnership with our program, please email <a href="mailto:info@domain.com">info@domain.com</a>. We will respond within 7 business days.</p>
+		<p>For any questions or County trustees interested in expanding this program to their district outside of the Washoe County Area, please email <a href="mailto:info@yaareno.org">info@yaareno.org</a>. We will respond within 7 business days.</p>
 		<p>Any 4th and 5th grader is allowed to submit through our digital form. Partnered schools would have a student arrive at their school introducing the project and handing physical flyers to students. We appreciate all the support we can get for this project! Partnered schools and their students do not get an advantage in the judging process. All submissions will be reviewed equally.</p>
 	</div>
 	<div class="contacts">
-		<a class="contact" href="mailto:info@domain.com">
+		<a class="contact" href="mailto:info@yaareno.org">
 			<Fa color="var(--black)" size=1.4x icon={faEnvelope} />
-			<span>info@domain.com</span>
+			<span>info@yaareno.org</span>
 		</a>
 		<a class="contact" href="https://www.instagram.com">
 			<Fa color="var(--black)" size=1.5x icon={faInstagramSquare} />
