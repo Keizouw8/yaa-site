@@ -11,7 +11,7 @@
 		</a>
 		<a class="contact" href="https://www.instagram.com">
 			<Fa color="var(--black)" size=1.5x icon={faInstagramSquare} />
-			<span>YoungAuthorsAnthology</span>
+			<span>YoungAuthorsAnthology (in progress)</span>
 		</a>
 	</div>
 	<button class="sendMemo" onclick={() => showMemo = true}>Send a memo</button>
