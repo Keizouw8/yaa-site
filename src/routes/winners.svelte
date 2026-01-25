@@ -1,4 +1,4 @@
-<iframe src="https://player.flipsnack.com/?hash=QzZFRkU3NkY4RDYrMTNsNm0zaWhwOA==" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen allow="autoplay; clipboard-read; clipboard-write"></iframe>
+<iframe allowfullscreen allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/acaf057e76.html"></iframe>
 <!-- <center class="laurel">
 	<img src="/laurel.svg" alt="laurel">
 	<h1>2025 Winners</h1>
