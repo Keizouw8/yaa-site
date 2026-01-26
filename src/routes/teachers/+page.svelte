@@ -50,7 +50,7 @@
 	}
 
 	:global(body){
-		padding: 3vw 5vw;
+		padding: 2vw 5vw;
 	}
 
 	div.container{
