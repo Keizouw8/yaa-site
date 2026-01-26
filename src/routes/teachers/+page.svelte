@@ -22,8 +22,21 @@
 		</p>
 	</div>
 </div>
-<h2>Submission</h2>
-<embed src="flyers/combined.pdf" type="application/pdf" id="pdfembed">
+<h2>Flyers</h2>
+<div class="container">
+	<center>
+		<embed src="flyers/bw.pdf" type="application/pdf" id="pdfembed">
+		<h3>For parents</h3>
+	</center>
+	<center>
+		<embed src="flyers/fall.pdf" type="application/pdf" id="pdfembed">
+		<h3>Fall</h3>
+	</center>
+	<center>
+		<embed src="flyers/spring.pdf" type="application/pdf" id="pdfembed">
+		<h3>Spring</h3>
+	</center>
+</div>
 <!-- <h2>More Learning Materials</h2>
 <div class="carousel">
 	{#each videos as video}
@@ -44,9 +57,8 @@
 	}
 
 	#pdfembed{
-		min-width: 400px;
+		min-width: 28vw;
 		height: 600px;
-		margin-right: 50px;
 	}
 
 	:global(body){
@@ -65,6 +77,10 @@
 		max-width: 43.5vw;
 		width: 100vw;
 		aspect-ratio: 16/9;
+	}
+
+	h3{
+		margin: 10px;
 	}
 
 	/*div.carousel{
