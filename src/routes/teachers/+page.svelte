@@ -1,7 +1,6 @@
 <h1>For teachers</h1>
 <div class="container">
-	<!-- <iframe id="video" src="https://www.youtube.com/embed/{primaryVideo}?si=UxmilJ0ZLqMCQWpt&amp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe> -->
-	<iframe id="video" title="vimeo-player" src="https://player.vimeo.com/video/1153601231?h=0af4790981" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+	<iframe id="video" src="https://www.youtube.com/embed/{primaryVideo}?si=UxmilJ0ZLqMCQWpt&amp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 	<div class="right">
 		<p style="margin: 0px;">We allow all 4th and 5th graders interested to write a short story that follows our Terms and Conditions. There is no discrimination regarding topic or writing style. We only look for school appropriate, original (no AI generated content), and prose based fiction. That is, fiction that reads like a novel. Unfortunately, we cannot accept picture, graphic, or comic novels as winners but would still love to read them!</p>
 		<p>Students should check out the Young Author’s Anthology books in their school libraries. <u>Every entrant who submits a valid story, blurb, and first name will also be included in the opening pages of our anthology as appreciation for participating.</u> Ask parents for permission and teachers if you need any help with submitting through our Google Form. If you are selected as a winner, we would kindly ask for a single photo of you and any authors who helped so it can be placed into the anthology.</p>
@@ -45,7 +44,7 @@
 	{/each}
 </div> -->
 <script lang="ts">
-	let primaryVideo = "_vh-0EBqgR0";
+	let primaryVideo = "z73pqtpQRNA";
 	let videos: string[] = ["qjiCTVFLrc0", "3vbJbPZpiTs", "hm3mJqJbLEo", "YbFAYk6y384", "ka6WQ-mwFbE", "CMgHRJiJnCw"];
 </script>
 <style>
