@@ -2,18 +2,23 @@
 <div class="container">
 	<iframe id="video" src="https://www.youtube.com/embed/{primaryVideo}?si=UxmilJ0ZLqMCQWpt&amp" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 	<div class="right">
-		<p style="margin: 0px;">We allow all 4th and 5th graders interested to write a short story that follows our Terms and Conditions. There is no discrimination regarding topic or writing style. We only look for school appropriate, original (no AI generated content), and prose based fiction. That is, fiction that reads like a novel. Unfortunately, we cannot accept picture, graphic, or comic novels as winners but would still love to read them!</p>
-		<p>Students should check out the Young Author’s Anthology books in their school libraries. <u>Every entrant who submits a valid story, blurb, and first name will also be included in the opening pages of our anthology as appreciation for participating.</u> Ask parents for permission and teachers if you need any help with submitting through our Google Form. If you are selected as a winner, we would kindly ask for a single photo of you and any authors who helped so it can be placed into the anthology.</p>
-		<p>Thirteen stories will be selected from the submission pool to be printed in a physical and digital anthology that will be sent back to the libraries of the winners and the schools listed below!</p>
-		<p>On the Google Form, students should submit their first name, a short blurb about themself below 50 words, and their short story along with their title to be considered valid submissions Winners will be notified via their email provided on the form and asked to submit an optional photo and their last name <u>within a week</u> if they have not already but wish to do so. Otherwise, first name, school, and blurb will be the only identifying information of a student used.</p>
+		<p style="margin: 0px;">All 4th and 5th grade students can type and submit fiction short stories below 2000 words to our program! The top thirteen stories are then printed in the Young Authors' anthology book and sent to every elementary school in the district. This means that your friends can read your story and so can students from other schools in their libraries! On top of this, every entrant who submits a valid story, blurb, and first name will also be included in the opening pages of our anthology as appreciation for participating. Writing is powerful, and the ideas can spread like wildfire. We want to get more students interested in writing and aware of its importance by awarding writers with this recognition! </p>
+		<p>When you submit a story to our program, you're an official author! Just like J.K Rowling (author of Harry Potter) or Rick Riordan (Author of Percy Jackson)!</p>
+		<p>Ask parents for permission and teachers if you need any help with submitting through our Google Form. Please follow our guidelines for story submissions below.</p>
+		<p>Students should check out the Young Author’s Anthology books in their school libraries.  If you are selected as a winner, we would kindly ask for a single photo of you and any authors who helped so it can be placed into the anthology.</p>
 		<b>
 			<p>Submission Requirements</p>
 			<ol>
 				<li>Under 2000 words</li>
 				<li>Original and fictional works</li>
 				<li>School Appropriate</li>
+				<li>Teamwork is allowed! (Max 5 students per team)</li>
+				<li>An "About Me" (50 word max) talking about why you decided to write so students can get to know a bit more about you!</li>
+				<li>No AI generated content</li>
+				<li>Illustrations are allowed, but should be school appropriate, fit on a 2 x 3 inch piece of paper. (Max 3 illustrations)</li>
 			</ol>
 		</b>
+		<p>Entrants do have to submit a first name and an email to be notified if they have won. Winners will be asked if they want to have their full name and photo of themselves published, however this is not a requirement to being published! If you wish to stay anonymous, that does not affect your application!</p>
 		<!-- position: absolute; bottom: 0; right: 43.5vw; transform: translateX(100%); -->
 		<br>
 		<p style="font-weight: 700;">
