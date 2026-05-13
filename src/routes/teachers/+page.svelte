@@ -1,6 +1,6 @@
 <h1>For teachers</h1>
 <div class="container">
-	<iframe id="video" src="https://www.youtube.com/embed/{primaryVideo}?si=UxmilJ0ZLqMCQWpt&amp" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+	<iframe id="video" title="Young Authors Anthology teacher video" src="https://www.youtube.com/embed/{primaryVideo}?si=UxmilJ0ZLqMCQWpt&amp" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 	<div class="right">
 		<p style="margin: 0px;">All 4th and 5th grade students can type and submit fiction short stories below 2000 words to our program! The top thirteen stories are then printed in the Young Authors' anthology book and sent to every elementary school in the district. This means that your friends can read your story and so can students from other schools in their libraries! On top of this, every entrant who submits a valid story, blurb, and first name will also be included in the opening pages of our anthology as appreciation for participating. Writing is powerful, and the ideas can spread like wildfire. We want to get more students interested in writing and aware of its importance by awarding writers with this recognition! </p>
 		<p>When you submit a story to our program, you're an official author! Just like J.K Rowling (author of Harry Potter) or Rick Riordan (Author of Percy Jackson)!</p>
@@ -53,21 +53,18 @@
 	let videos: string[] = ["qjiCTVFLrc0", "3vbJbPZpiTs", "hm3mJqJbLEo", "YbFAYk6y384", "ka6WQ-mwFbE", "CMgHRJiJnCw"];
 </script>
 <style>
-	u{
-		font-weight: 700;
-	}
-
 	div.right{
 		width: 43.5vw;
 	}
 
 	#pdfembed{
-		min-width: 28vw;
+		width: 28vw;
+		min-width: 0;
 		height: 600px;
 	}
 
 	:global(body){
-		padding: 2vw 5vw;
+		padding: clamp(16px, 2vw, 32px) clamp(16px, 5vw, 64px);
 	}
 
 	div.container{
@@ -75,6 +72,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		position: relative;
+		gap: clamp(16px, 3vw, 32px);
 	}
 
 	#video{
@@ -86,6 +84,35 @@
 
 	h3{
 		margin: 10px;
+	}
+
+	@media (max-width: 900px){
+		div.container{
+			flex-direction: column;
+		}
+
+		div.right{
+			width: 100%;
+		}
+
+		#video{
+			width: 100%;
+			max-width: 100%;
+			max-height: none;
+		}
+
+		#pdfembed{
+			width: 100%;
+			height: 70svh;
+			min-height: 420px;
+		}
+	}
+
+	@media (max-height: 560px){
+		#pdfembed{
+			height: 80svh;
+			min-height: 260px;
+		}
 	}
 
 	/*div.carousel{

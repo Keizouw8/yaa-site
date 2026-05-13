@@ -1,4 +1,4 @@
-<iframe allowfullscreen allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/acaf057e76.html"></iframe>
+<iframe title="2025 winners anthology" allowfullscreen allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/acaf057e76.html"></iframe>
 <!-- <center class="laurel">
 	<img src="/laurel.svg" alt="laurel">
 	<h1>2025 Winners</h1>
@@ -6,29 +6,23 @@
 <script lang="ts"></script>
 <style>
 	iframe{
-		position: absolute;
-		height: calc(100% - 10vw);
-		width: calc(100% - 24vw);
+		position: relative;
+		width: 100%;
+		height: calc(100svh - var(--nav-height) - 10vw);
+		min-height: 360px;
+		border: none;
+	}
+	@media (max-width: 700px){
+		iframe{
+			height: 70svh;
+			min-height: 420px;
+		}
 	}
 
-	.laurel{
-		position: absolute;
-		top: calc(3vw + 8vh);
-		left: 3vw;
-		display: block;
-		z-index: 10;
-	}
-
-	.laurel img{
-		height: 30vh;
-		position: absolute;
-		transform: translate(-50%, -35%);
-		z-index: -1;
-	}
-
-	h1{
-		margin: 0;
-		font-size: 6vh;
-		font-weight: 900;
+	@media (max-height: 540px){
+		iframe{
+			height: calc(100svh - var(--nav-height) - 24px);
+			min-height: 260px;
+		}
 	}
 </style>
