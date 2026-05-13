@@ -16,7 +16,7 @@
 	</div>
 	<button class="sendMemo" onclick={() => showMemo = true}>Send a memo</button>
 </div>
-<div class="blur{ showMemo ? " active" : "" }" onclick={() => showMemo = false}></div>
+<button type="button" aria-label="Close memo" class="blur{ showMemo ? " active" : "" }" onclick={() => showMemo = false}></button>
 <div class="memo{ showMemo ? " active" : "" }">
 	<div class="topbar">
 		<input class="fullname" type="text" placeholder="Full name">
@@ -36,7 +36,8 @@
 	.blur{
 		opacity: 0;
 		pointer-events: none;
-		position: absolute;
+		position: fixed;
+		z-index: 20;
 		height: 100%;
 		width: 100%;
 		top: 0;
@@ -53,12 +54,10 @@
 	}
 
 	.sendMemo{
-		position: absolute;
-		bottom: 0;
-		right: 0;
+		align-self: flex-end;
 	}
 
-	button{
+	button:not(.blur){
 		border: none;
 		outline: none;
 		background: var(--black);
@@ -93,7 +92,7 @@
 	}
 
 	::placeholder{
-		color: var(100, 100, 100);
+		color: rgb(100, 100, 100);
 	}
 
 	textarea{
@@ -111,31 +110,31 @@
 	}
 
 	.container{
-		position: absolute;
-		top: 50%;
-		transform: translate(-50%, -50%);
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		left: 50%;
-		height: calc(100vh - 300px);
-		width: 75vw;
+		justify-content: center;
+		gap: 24px;
+		min-height: 100%;
+		width: min(75vw, 960px);
+		margin: 0 auto;
 	}
 
 	.memo{
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
-		width: calc(60vw - 200px);
-		height: calc(100vh - 340px);
+		width: min(720px, calc(100vw - 40px));
+		height: min(520px, calc(100svh - 40px));
 		border: 2px solid var(--black);
 		padding: 20px;
-		border-radius: 15px;
+		border-radius: 10px;
 		pointer-events: none;
 		opacity: 0;
 		transition: opacity 0.5s;
 		background: var(--white);
-		position: absolute;
+		position: fixed;
+		z-index: 21;
 	}
 
 	.memo.active{
@@ -144,7 +143,7 @@
 	}
 
 	h1{
-		font-size: 40px;
+		font-size: clamp(2rem, 4vw, 40px);
 		margin-top: 0;
 	}
 
@@ -159,6 +158,7 @@
 		margin-top: 10px;
 		color: var(--black);
 		text-decoration: none;
+		max-width: 100%;
 		width: fit-content;
 	}
 
@@ -166,6 +166,7 @@
 		margin-left: 10px;
 		width: fit-content;
 		position: relative;
+		overflow-wrap: anywhere;
 	}
 
 	.contact span::after{
@@ -182,6 +183,40 @@
 
 	.contact span:hover::after{
 		opacity: 1;
+	}
+
+	@media (max-width: 700px), (max-height: 650px){
+		.container{
+			width: 100%;
+			min-height: auto;
+			justify-content: flex-start;
+			gap: 18px;
+		}
+
+		.contacts{
+			font-size: 16px;
+		}
+
+		.topbar{
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		input.fullname, input.email{
+			width: 100%;
+		}
+
+		.topbar input{
+			font-size: 16px;
+		}
+
+		.topbar button{
+			width: 100%;
+		}
+
+		textarea{
+			height: calc(100% - 150px);
+		}
 	}
 
 </style>

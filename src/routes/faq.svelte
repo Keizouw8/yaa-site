@@ -5,14 +5,14 @@
 			{#if i}
 				<hr>
 			{/if}
-			<div class="qa{ active == i ? " active" : "" }" style="--qheight: {heights[i]?.[0]}px; --aheight: {heights[i]?.[1]}px;" onclick={() => active = i} >
+			<button type="button" class="qa{ active == i ? " active" : "" }" style="--qheight: {heights[i]?.[0]}px; --aheight: {heights[i]?.[1]}px;" onclick={() => active = i} >
 				<span class="show">∨</span>
 				<span class="q" bind:this={qElems[i]}>{question}</span>
 				<span class="a" bind:this={aElems[i]}>{@html answer}</span>
-			</div>
+			</button>
 		{/each}
 </div>
-<span class="contactus">If you have any other questions, <a class="contact" onclick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>contact us</a>!</span>
+<span class="contactus">If you have any other questions, <a class="contact" href="#contact">contact us</a>!</span>
 </div>
 <script lang="ts">
 	let active = $state(0);
@@ -21,7 +21,6 @@
 	let heights: [number, number][] = $state([]);
 
 	$effect(setHeights);
-	$inspect(heights);
 
 	let questions: [string, string][] = [
 		["What genres do we submit?",
@@ -43,18 +42,34 @@
 	}
 </script>
 <style>
+	.wrapper{
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 24px;
+	}
+
 	.qas{
 		display: flex;
 		flex-direction: column;
-		width: 75vw;
+		width: 100%;
 	}
 
 	.qa{
 		position: relative;
+		display: block;
+		width: 100%;
 		height: var(--qheight);
 		overflow-y: hidden;
 		transition: height 0.2s;
 		cursor: pointer;
+		border: none;
+		padding: 0;
+		background: none;
+		color: var(--black);
+		font: inherit;
+		text-align: left;
 	}
 
 	.qa.active{
@@ -109,12 +124,45 @@
 
 	.contactus{
 		font-size: 18px;
-		position: absolute;
-		bottom: 5vw;
 	}
 
 	.contact{
 		cursor: pointer;
 		text-decoration: underline;
+	}
+
+	@media (max-width: 700px), (max-height: 650px){
+		.wrapper{
+			justify-content: flex-start;
+			gap: 18px;
+		}
+
+		.q{
+			font-size: clamp(18px, 5vw, 25px);
+			padding-right: 36px;
+		}
+
+		.a{
+			font-size: 16px;
+		}
+
+		.show{
+			right: 8px;
+		}
+
+		.contactus{
+			font-size: 16px;
+		}
+	}
+
+	@media (max-height: 540px){
+		hr{
+			margin: 10px 0;
+		}
+
+		.a{
+			font-size: 15px;
+			line-height: 1.32;
+		}
 	}
 </style>

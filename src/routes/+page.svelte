@@ -1,37 +1,38 @@
-<svelte:window bind:scrollY bind:innerHeight />
+<svelte:window bind:scrollY bind:innerHeight bind:innerWidth />
 <div class="ribbon{scrollY > innerHeight / 2 ? " locked": ""}" style="top: {offset}px" bind:contentRect>
 	{#each pages.slice(1) as [_, title, link], i}
-		<a class="bold{between(scrollY / innerHeight - i, 0.5, 1.5) ? " active" : ""}" onclick={() => document.getElementById(link)?.scrollIntoView({ behavior: "smooth" })}>{title}</a>
+		<a href="#{link}" class="bold{between(scrollY / innerHeight - i, 0.5, 1.5) ? " active" : ""}">{title}</a>
 	{/each}
 	<a target="_blank" href="/teachers" class="bold">For teachers</a>
 </div>
 <div class="ribbonbg{scrollY > innerHeight - 100 ? " active" : ""}">
-	<img src="logo.png" alt="Logo" onclick={() => document.body.scrollIntoView({ behavior: "smooth" })}>
+	<a href="#home" aria-label="Back to top"><img src="logo.png" alt="Logo"></a>
 </div>
-{#each pages as [Page, _, link, color], i}
-	<div class="fullscreen" style="top: {100 * i}vh; background: {color || "none"}" id="{link}">
-		<div style="display: block; position: relative; width: 75vw; height: calc(100vh - {!i ? 0 : 100}px - 10vw); padding: 5vw 12.5vw">
+{#each pages as [Page, _, link, color]}
+	<section class="fullscreen" style="background: {color || "none"}" id="{link}">
+		<div class="section-content">
 			<Page />
 		</div>
-	</div>
+	</section>
 {/each}
 <script lang="ts">
     import type { Component } from "svelte";
 	import Landing from "./landing.svelte";
 	import Winners from "./winners.svelte";
 	import About from "./about.svelte";
-    import Submit from "./submit.svelte";
     import FAQ from "./faq.svelte";
     import Contact from "./contact.svelte";
 
     let scrollY = $state(0);
     let innerHeight = $state(0);
+    let innerWidth = $state(0);
     let contentRect = $state({ height: 0 });
-    let defaultOffset = $derived(innerHeight * 0.8 - contentRect.height);
-    let offset = $derived(scrollY > defaultOffset ? 0 : defaultOffset - scrollY);
+    let compactNav = $derived(innerWidth <= 760 || innerHeight <= 540 || innerWidth / innerHeight <= 0.8);
+    let defaultOffset = $derived(Math.max(0, innerHeight * 0.8 - contentRect.height));
+    let offset = $derived(compactNav || scrollY > defaultOffset ? 0 : defaultOffset - scrollY);
 
 	let pages: [Component, string, string, string?][] = [
-		[Landing, "", "", "var(--black)"],
+		[Landing, "", "home", "var(--black)"],
 		[About, "About", "about"],
 		// [Submit, "Submit", "submit"],
 		[Winners, "Winners", "winners"],
@@ -45,17 +46,30 @@
 </script>
 <style>
 	:global(html){
-		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
+		scroll-snap-type: y proximity;
 	}
 
 	.fullscreen{
-		position: absolute;
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		min-height: 100svh;
 		overflow-x: hidden;
 		scroll-snap-align: start;
 		display: flex;
-		align-items: flex-end;
+		align-items: stretch;
+	}
+
+	.section-content{
+		position: relative;
+		width: min(75vw, 1200px);
+		min-height: calc(100svh - var(--nav-height) - 10vw);
+		margin: 0 auto;
+		padding: calc(var(--nav-height) + 5vw) 0 5vw;
+	}
+
+	.fullscreen:first-of-type .section-content{
+		min-height: calc(100svh - 10vw);
+		padding-top: 5vw;
 	}
 
 	.ribbon {
@@ -64,20 +78,22 @@
 		left: 8vw;
 		display: flex;
 		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		gap: 0.5rem 1.5vw;
 		transition: left 0.3s;
-		height: none;
-		width: none;
+		max-width: calc(100vw - 160px);
 	}
 
 	.ribbon.locked{
-		height: 100px;
+		min-height: var(--nav-height);
 		left: 30px;
 	}
 
 	.ribbonbg{
 		position: fixed;
 		z-index: 1;
-		height: 100px;
+		min-height: var(--nav-height);
 		width: 100vw;
 		left: 0;
 		top: 0;
@@ -88,16 +104,20 @@
 	}
 
 	.ribbonbg.active{
-		background: var(--black)
+		background: var(--black);
 	}
 
 	.ribbonbg.active img{
 		opacity: 1;
 	}
 
-	.ribbonbg img{
-		height: 60px;
+	.ribbonbg a{
+		display: flex;
 		margin-right: 30px;
+	}
+
+	.ribbonbg img{
+		height: clamp(42px, 6vw, 60px);
 		cursor: pointer;
 		opacity: 0;
 		transition: opacity 0.2s;
@@ -106,8 +126,7 @@
 	.ribbon a{
 		color: var(--white);
 		text-decoration: none;
-		font-size: 2.2vw;
-		margin-right: 1.5vw;
+		font-size: clamp(0.9rem, 2.2vw, 1.65rem);
 		transition: border-bottom 0.25s, padding-bottom 0.25s;
 		border-bottom: solid transparent 8px;
 		cursor: pointer;
@@ -116,5 +135,50 @@
 	.ribbon a.active, .ribbon:not(:has(.active)) > a:hover{
 		border-bottom: solid var(--white) 3px;
 		padding-bottom: 5px;
+	}
+
+	@media (max-width: 700px){
+		.section-content{
+			width: calc(100% - 32px);
+			min-height: calc(100svh - var(--nav-height) - 32px);
+			padding: calc(var(--nav-height) + 24px) 0 24px;
+		}
+
+		.fullscreen:first-of-type .section-content{
+			min-height: calc(100svh - 32px);
+			padding-top: 24px;
+		}
+
+		.ribbon, .ribbon.locked{
+			left: 16px;
+			max-width: calc(100vw - 32px);
+			min-height: var(--nav-height);
+			gap: 0.25rem 0.75rem;
+		}
+
+		.ribbon a{
+			border-bottom-width: 3px;
+			font-size: clamp(0.78rem, 3.6vw, 0.95rem);
+		}
+
+		.ribbonbg{
+			justify-content: center;
+		}
+
+		.ribbonbg a{
+			display: none;
+		}
+	}
+
+	@media (max-height: 540px){
+		.section-content{
+			min-height: calc(100svh - var(--nav-height) - 24px);
+			padding: calc(var(--nav-height) + 16px) 0 16px;
+		}
+
+		.fullscreen:first-of-type .section-content{
+			min-height: calc(100svh - 24px);
+			padding-top: 16px;
+		}
 	}
 </style>
