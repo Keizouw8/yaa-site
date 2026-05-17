@@ -4,9 +4,7 @@
 		<button onclick={increment}>&gt;</button>
 	</div>
 	<center id="content">
-		<p>The Young Author’s Anthology of Northern Nevada is dedicated to motivating young writers towards reading and writing, making it a lifelong passion, and becoming future authors.
-		We allow all 4th and 5th graders interested to write a short story that follows our Terms and Conditions. There is no discrimination regarding topic or writing style. We only look for school appropriate, original (no AI generated content), and prose based fiction.
-		Thirteen stories will be selected from the submission pool to be printed in a physical and digital anthology that will be sent back to the libraries of the winners and the schools listed below! All 4th and 5th graders are allowed to submit and schools interested in joining the partnership can refer to our Contact Us page for more information.</p>
+		<p>The Young Author's Anthology of Northern Nevada is dedicated to motivating young writers. We want to give something to connect the district together that our team grew up in by generating a lifelong passion for creative writing in students. We allow all 4th through 8th graders interested to write a short story. However, our real secret is working directly with elementary and middle schools alike to push the program towards students. Lower income students might not be able to seek these opportunities themselves and so baking them into the curriculum is where the Young Author's Anthology strives. We hope that this program represents the dedication towards education that we've seen every parent, student, and school faculty member involved with the Young Author's Anthology embody. This program spreads best through word of mouth, and so if you are a school teacher, principal, or simply a parent or student involved at any middle school that does not currently have this program, please reach out to us at our <a href="#contact">contact page.</a> </p>
 	</center>
 </div>
 <script lang="ts">
