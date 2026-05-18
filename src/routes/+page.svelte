@@ -20,6 +20,7 @@
 	import Landing from "./landing.svelte";
 	import Winners from "./winners.svelte";
 	import About from "./about.svelte";
+	import Submit from "./submit.svelte";
     import FAQ from "./faq.svelte";
     import Contact from "./contact.svelte";
 
@@ -34,8 +35,8 @@
 	let pages: [Component, string, string, string?][] = [
 		[Landing, "", "home", "var(--black)"],
 		[About, "About", "about"],
-		// [Submit, "Submit", "submit"],
 		[Winners, "Winners", "winners"],
+		[Submit, "Submit Here", "submit"],
 		[FAQ, "FAQ", "faq"],
 		[Contact, "Contact", "contact"]
 	];
@@ -70,6 +71,12 @@
 	.fullscreen:first-of-type .section-content{
 		min-height: calc(100svh - 10vw);
 		padding-top: 5vw;
+	}
+
+	#submit .section-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.ribbon {

@@ -1,17 +1,17 @@
 <div class="container">
 	<div>
 		<h1>Let's get in touch!</h1>
-		<p>For any questions or County trustees interested in expanding this program to their district outside of the Washoe County Area, please email <a href="mailto:info@yaareno.org">info@yaareno.org</a>. We will respond within 7 business days.</p>
-		<p>Any 4th and 5th grader is allowed to submit through our digital form. Partnered schools would have a student arrive at their school introducing the project and handing physical flyers to students. We appreciate all the support we can get for this project! Partnered schools and their students do not get an advantage in the judging process. All submissions will be reviewed equally.</p>
+		<p>For any questions or if you are a school that wants to partner with us, please email <a href="mailto:info@yaareno.org">info@yaareno.org</a>. We will respond within 7 business days.</p>
+		<p>Any 4th-8th grader is allowed to submit through our digital submission link. Partnered schools simply help us spread the word of the program and we send students over to give presentations to their students! We appreciate all the support we can get for this project, and hope that it can be one of many movements forward by the students of Washoe county to give back to their district!</p>
 	</div>
 	<div class="contacts">
 		<a class="contact" href="mailto:info@yaareno.org">
 			<Fa color="var(--black)" size=1.4x icon={faEnvelope} />
 			<span>info@yaareno.org</span>
 		</a>
-		<a class="contact" href="https://www.instagram.com">
+		<a class="contact" href="https://www.instagram.com/yaa_reno/">
 			<Fa color="var(--black)" size=1.5x icon={faInstagramSquare} />
-			<span>YoungAuthorsAnthology (in progress)</span>
+			<span>YoungAuthorsAnthology</span>
 		</a>
 	</div>
 	<button class="sendMemo" onclick={() => showMemo = true}>Send a memo</button>
@@ -19,11 +19,11 @@
 <button type="button" aria-label="Close memo" class="blur{ showMemo ? " active" : "" }" onclick={() => showMemo = false}></button>
 <div class="memo{ showMemo ? " active" : "" }">
 	<div class="topbar">
-		<input class="fullname" type="text" placeholder="Full name">
-		<input class="email" type="email" placeholder="Email">
-		<button>Send</button>
+		<input class="fullname" type="text" placeholder="Full name" bind:value={fullName}>
+		<input class="email" type="email" placeholder="Email" bind:value={email}>
+		<button onclick={sendMemo}>Send</button>
 	</div>
-	<textarea placeholder={"Memo"}></textarea>
+	<textarea placeholder={"Memo"} bind:value={memo}></textarea>
 </div>
 <script lang="ts">
 	import Fa from "svelte-fa";
@@ -31,6 +31,14 @@
 	import { faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 
 	let showMemo = $state(false);
+	let fullName = $state("");
+	let email = $state("");
+	let memo = $state("");
+
+	function sendMemo() {
+		const body = [`Name: ${fullName}`, `Email: ${email}`, "", memo].join("\n");
+		window.location.href = `mailto:info@yaareno.org?subject=${encodeURIComponent("Memo from YAA site")}&body=${encodeURIComponent(body)}`;
+	}
 </script>
 <style>
 	.blur{

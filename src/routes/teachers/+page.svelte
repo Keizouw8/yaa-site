@@ -2,10 +2,11 @@
 <div class="container">
 	<iframe id="video" title="Young Authors Anthology teacher video" src="https://www.youtube.com/embed/{primaryVideo}?si=UxmilJ0ZLqMCQWpt&amp" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 	<div class="right">
-		<p style="margin: 0px;">All 4th and 5th grade students can type and submit fiction short stories below 2000 words to our program! The top thirteen stories are then printed in the Young Authors' anthology book and sent to every elementary school in the district. This means that your friends can read your story and so can students from other schools in their libraries! On top of this, every entrant who submits a valid story, blurb, and first name will also be included in the opening pages of our anthology as appreciation for participating. Writing is powerful, and the ideas can spread like wildfire. We want to get more students interested in writing and aware of its importance by awarding writers with this recognition! </p>
-		<p>When you submit a story to our program, you're an official author! Just like J.K Rowling (author of Harry Potter) or Rick Riordan (Author of Percy Jackson)!</p>
-		<p>Ask parents for permission and teachers if you need any help with submitting through our Google Form. Please follow our guidelines for story submissions below.</p>
-		<p>Students should check out the Young Author’s Anthology books in their school libraries.  If you are selected as a winner, we would kindly ask for a single photo of you and any authors who helped so it can be placed into the anthology.</p>
+		<p style="margin: 0px;">All 4th-8th grade students can type and submit fiction stories according to our submission guidelines. All valid submissions will receive an email back confirming that their submission is valid. </p>
+		<p>We wholeheartedly recommend teacher award student currency for their student's hard work. Many schools have given 10 paw points, PBIS points, or any other form of student currency. </p>
+		<p>We will also email back with an announcement to our winners exclusively. They should present that email to their teacher and we recommend rewarding the student if possible. Many schools have given 100 paw points, PBIS points, or any other form of student currency.</p>
+		<p>Students should ask their parents before submitting a story, as one of the questions on our submission page asks the student to confirm they have received consent from their parent. If they need digital assistance, we kindly ask that families and teachers help out. Any major digital issues can be addressed by reaching out to us at our <a href="/#contact">contact</a> page which we check frequently especially in the months of October and April.</p>
+		<p>Students from partnered schools should also check out the Young Author's Anthology within their school libraries for more inspiration. If a copy isn't available, we have a digital copy available in our <a href="/#winners">Winners page</a>.</p>
 		<b>
 			<p>Submission Requirements</p>
 			<ol>
