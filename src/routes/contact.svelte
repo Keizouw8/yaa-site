@@ -11,7 +11,7 @@
 		</a>
 		<a class="contact" href="https://www.instagram.com/yaa_reno/">
 			<Fa color="var(--black)" size=1.5x icon={faInstagramSquare} />
-			<span>YoungAuthorsAnthology</span>
+			<span>@yaa_reno</span>
 		</a>
 	</div>
 	<button class="sendMemo" onclick={() => showMemo = true}>Send a memo</button>
