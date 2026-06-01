@@ -1,9 +1,71 @@
-<div class="landing">
-	<div class="info">
+	<div class="landing">
+		<div class="info">
 		<h1 class="title bold">Young Author's Anthology</h1>
 		<p class="subtitle">A project for Washoe County students by Washoe County students</p>
 		<!-- <p style="margin-left: 25px;">Teacher? Click here.</p> -->
-	</div>
+		</div>
+
+<div class="logo-band">
+    <div class="logo-track">
+        <img src="/partners/Bannerbhmd_1.png" alt="Bannerbhmd_1">
+        <span class="divider"></span>
+        <img src="/partners/Brown.png" alt="Brown">
+        <span class="divider"></span>
+        <img src="/partners/deserthigh.png" alt="deserthigh">
+        <span class="divider"></span>
+        <img src="/partners/DesertSkies.png" alt="DesertSkies">
+        <span class="divider"></span>
+        <img src="/partners/dilworth.png" alt="dilworth">
+        <span class="divider"></span>
+        <img src="/partners/doral.png" alt="doral">
+        <span class="divider"></span>
+        <img src="/partners/Hunsberger.png" alt="Hunsberger">
+        <span class="divider"></span>
+        <img src="/partners/MarceHerz.png" alt="MarceHerz">
+        <span class="divider"></span>
+        <img src="/partners/mater.png" alt="mater">
+        <span class="divider"></span>
+        <img src="/partners/Mendive.png" alt="Mendive">
+        <span class="divider"></span>
+        <img src="/partners/MountRose.png" alt="MountRose">
+        <span class="divider"></span>
+        <img src="/partners/SkyRanch.png" alt="SkyRanch">
+        <span class="divider"></span>
+        <img src="/partners/SparksMS.png" alt="SparksMS">
+        <span class="divider"></span>
+        <img src="/partners/swope.png" alt="swope">
+        <span class="divider"></span> <div class="logo-track-duplicate" aria-hidden="true" style="display: flex; align-items: center;">
+            <img src="/partners/Bannerbhmd_1.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/Brown.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/deserthigh.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/DesertSkies.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/dilworth.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/doral.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/Hunsberger.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/MarceHerz.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/mater.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/Mendive.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/MountRose.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/SkyRanch.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/SparksMS.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/swope.png" alt="">
+        </div>
+    </div>
+</div>
+
 	<div class="fire" bind:this={fireContainer}>
 		<div class="flame" id="flame1"></div>
 		<div class="flame" id="flame2"></div>
@@ -72,10 +134,10 @@
 	.landing{
 		min-height: inherit;
 		display: grid;
+		position: relative;
 		grid-template-columns: minmax(0, 1fr) minmax(240px, 0.75fr);
 		gap: clamp(2rem, 6vw, 5.5rem);
 		align-items: center;
-		overflow: hidden;
 		isolation: isolate;
 	}
 
@@ -142,6 +204,48 @@
 		position: relative;
 		z-index: 2;
 		max-width: 640px;
+		margin-top: 3rem;
+	}
+
+	.logo-band{
+		position: absolute;
+		top: -5rem;
+		left: 0;
+		width: 100%;
+		background: var(--white);
+		padding: 1rem 0;
+		overflow: hidden;
+		z-index: -10
+	}
+
+	.logo-track{
+		display: flex;
+		align-items: center;
+		animation: scroll-logos 45s linear infinite;
+		width: max-content;
+	}
+
+	.logo-track img{
+		height: 90px;
+		width: auto;
+		object-fit: contain;
+	}
+
+	.divider{
+		width: 1px;
+		height: 40px;
+		background: #ccc;
+		margin: 0 1.5rem;
+		flex-shrink: 0;
+	}
+
+	@keyframes scroll-logos{
+		0%{ transform: translate3d(0, 0, 0); }
+		100%{ transform: translate3d(-50%, 0, 0); }
+	}
+
+	.logo-track:hover{
+		animation-play-state: paused;
 	}
 
 	.title{
@@ -162,6 +266,7 @@
 		width: clamp(220px, 28vw, 400px);
 		aspect-ratio: 10 / 11;
 		overflow: visible;
+		margin-top: 12rem; 
 		pointer-events: none;
 	}
 
@@ -172,14 +277,17 @@
 			padding: 0 8vw;
 			grid-template-columns: 50vw 30vw;
 			gap: 4vw;
+	
 		}
 
 		.info{
 			max-width: none;
+			transform: translateY(-10vh);
 		}
 
 		.fire{
 			width: 30vw;
+			transform: translateY(-10vh);
 		}
 	}
 
