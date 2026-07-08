@@ -11,6 +11,12 @@
         <span class="divider"></span>
         <img src="/partners/Brown.png" alt="Brown">
         <span class="divider"></span>
+        <img src="/partners/caughlinranch.png" alt="caughlinranch">
+        <span class="divider"></span>
+        <img src="/partners/coral.png" alt="coral">
+        <span class="divider"></span>
+        <img src="/partners/Depoali.png" alt="Depoali">
+        <span class="divider"></span>
         <img src="/partners/deserthigh.png" alt="deserthigh">
         <span class="divider"></span>
         <img src="/partners/DesertSkies.png" alt="DesertSkies">
@@ -29,15 +35,27 @@
         <span class="divider"></span>
         <img src="/partners/MountRose.png" alt="MountRose">
         <span class="divider"></span>
+        <img src="/partners/Peavine.png" alt="Peavine">
+        <span class="divider"></span>
+        <img src="/partners/SageRidgeSchool.png" alt="SageRidgeSchool">
+        <span class="divider"></span>
         <img src="/partners/SkyRanch.png" alt="SkyRanch">
         <span class="divider"></span>
         <img src="/partners/SparksMS.png" alt="SparksMS">
         <span class="divider"></span>
         <img src="/partners/swope.png" alt="swope">
-        <span class="divider"></span> <div class="logo-track-duplicate" aria-hidden="true" style="display: flex; align-items: center;">
+        <span class="divider"></span> 
+        
+        <div class="logo-track-duplicate" aria-hidden="true" style="display: flex; align-items: center;">
             <img src="/partners/Bannerbhmd_1.png" alt="">
             <span class="divider"></span>
             <img src="/partners/Brown.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/caughlinranch.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/coral.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/Depoali.png" alt="">
             <span class="divider"></span>
             <img src="/partners/deserthigh.png" alt="">
             <span class="divider"></span>
@@ -56,6 +74,10 @@
             <img src="/partners/Mendive.png" alt="">
             <span class="divider"></span>
             <img src="/partners/MountRose.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/Peavine.png" alt="">
+            <span class="divider"></span>
+            <img src="/partners/SageRidgeSchool.png" alt="">
             <span class="divider"></span>
             <img src="/partners/SkyRanch.png" alt="">
             <span class="divider"></span>
