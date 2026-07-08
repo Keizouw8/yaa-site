@@ -3,7 +3,8 @@
 	{#each pages.slice(1) as [_, title, link], i}
 		<a href="#{link}" class="bold{between(scrollY / innerHeight - i, 0.5, 1.5) ? " active" : ""}">{title}</a>
 	{/each}
-	<a target="_blank" href="/teachers" class="bold">For teachers</a>
+	<!-- FOR TEACHEERS - ENABLE LATER<a target="_blank" href="/teachers" class="bold">For teachers</a> -->
+	<a target="_blank" href="/team" class="bold">Team</a>
 </div>
 <div class="ribbonbg{scrollY > innerHeight - 100 ? " active" : ""}">
 	<a href="#home" aria-label="Back to top"><img src="logo.png" alt="Logo"></a>
