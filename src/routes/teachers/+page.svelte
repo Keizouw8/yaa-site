@@ -1,12 +1,9 @@
-<h1>For teachers</h1>
+<!-- keizou, if u ever see this, im sorry for how sus the css is -->
+<center><h1>For teachers</h1></center>
 <div class="container">
-	<iframe id="video" title="Young Authors Anthology teacher video" src="https://www.youtube.com/embed/{primaryVideo}?si=UxmilJ0ZLqMCQWpt&amp" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+	<iframe id="video" title="Young Authors Anthology teacher video" src="https://www.youtube.com/embed/{primaryVideo}" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+	</div>
 	<div class="right">
-		<p style="margin: 0px;">All 4th-8th grade students can type and submit fiction stories according to our submission guidelines. All valid submissions will receive an email back confirming that their submission is valid. </p>
-		<p>We wholeheartedly recommend teacher award student currency for their student's hard work. Many schools have given 10 paw points, PBIS points, or any other form of student currency. </p>
-		<p>We will also email back with an announcement to our winners exclusively. They should present that email to their teacher and we recommend rewarding the student if possible. Many schools have given 100 paw points, PBIS points, or any other form of student currency.</p>
-		<p>Students should ask their parents before submitting a story, as one of the questions on our submission page asks the student to confirm they have received consent from their parent. If they need digital assistance, we kindly ask that families and teachers help out. Any major digital issues can be addressed by reaching out to us at our <a href="/#contact">contact</a> page which we check frequently especially in the months of October and April.</p>
-		<p>Students from partnered schools should also check out the Young Author's Anthology within their school libraries for more inspiration. If a copy isn't available, we have a digital copy available in our <a href="/#winners">Winners page</a>.</p>
 		<b>
 			<p>Submission Requirements</p>
 			<ol>
@@ -27,22 +24,16 @@
 		<br>Fall Submission: <a href="https://forms.gle/oPvN9hZEdjoEcWSt9">https://forms.gle/oPvN9hZEdjoEcWSt9</a>
 		</p>
 	</div>
-</div>
-<h2>Flyers</h2>
-<div class="container">
-	<center>
-		<embed src="flyers/bw.pdf" type="application/pdf" id="pdfembed">
-		<h3>For parents</h3>
-	</center>
-	<center>
-		<embed src="flyers/fall.pdf" type="application/pdf" id="pdfembed">
-		<h3>Fall</h3>
-	</center>
-	<center>
-		<embed src="flyers/spring.pdf" type="application/pdf" id="pdfembed">
-		<h3>Spring</h3>
-	</center>
-</div>
+
+	<div class="left">
+				<p>All 4th-8th grade students can type and submit fiction stories according to our submission guidelines. All valid submissions will receive an email back confirming that their submission is valid. </p>
+		<p>We wholeheartedly recommend teacher award student currency for their student's hard work. Many schools have given 10 paw points, PBIS points, or any other form of student currency. </p>
+		<p>We will also email back with an announcement to our winners exclusively. They should present that email to their teacher and we recommend rewarding the student if possible. Many schools have given 100 paw points, PBIS points, or any other form of student currency.</p>
+		<p>Students should ask their parents before submitting a story, as one of the questions on our submission page asks the student to confirm they have received consent from their parent. If they need digital assistance, we kindly ask that families and teachers help out. Any major digital issues can be addressed by reaching out to us at our <a href="/#contact">contact</a> page which we check frequently especially in the months of October and April.</p>
+		<p>Students from partnered schools should also check out the Young Author's Anthology within their school libraries for more inspiration. If a copy isn't available, we have a digital copy available in our <a href="/#winners">Winners page</a>.</p>
+	</div>
+
+
 <!-- <h2>More Learning Materials</h2>
 <div class="carousel">
 	{#each videos as video}
@@ -50,14 +41,20 @@
 	{/each}
 </div> -->
 <script lang="ts">
-	let primaryVideo = "z73pqtpQRNA";
+	let primaryVideo = "dEuvDm4KKAA";
 	let videos: string[] = ["qjiCTVFLrc0", "3vbJbPZpiTs", "hm3mJqJbLEo", "YbFAYk6y384", "ka6WQ-mwFbE", "CMgHRJiJnCw"];
 </script>
 <style>
 	div.right{
 		width: 43.5vw;
+		right: 3.25vw;  
+		position: absolute;
 	}
-
+	div.left {
+		width: 43.5vw; 
+		left: 3.25vw; 
+		position: absolute; 
+	}
 	#pdfembed{
 		width: 28vw;
 		min-width: 0;
@@ -69,16 +66,14 @@
 	}
 
 	div.container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 		position: relative;
 		gap: clamp(16px, 3vw, 32px);
+		text-align: center; 
 	}
 
 	#video{
-		max-height: 80vh;
-		max-width: 43.5vw;
+		max-height: 70vh;
+		max-width: 80vw; 
 		width: 100vw;
 		aspect-ratio: 16/9;
 	}
@@ -94,6 +89,11 @@
 
 		div.right{
 			width: 100%;
+			position: relative !important; 
+		}
+		div.left {
+			width: 100%; 
+			position: relative !important; 
 		}
 
 		#video{
