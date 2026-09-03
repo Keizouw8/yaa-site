@@ -36,7 +36,8 @@
 		["Do I have to submit a photo if I am selected as a winner?",
 			"We want to respect the privacy of any applicant who submits. While we will ask for a first and last name on our form, the photos are only asked of our winning entrants and is completely optional. We use stock pictures for anonymous winners. That being said, we want to give new students entering their elementary or middle school a way to see their alumni from their school and the work they made! Please submit a photo if you are comfortable, but it will not affect your placement into the anthology. "],
 		["How is judging conducted?",
-			"We have a judging team that works in two rounds. The initial round simply looks at stories and then determines which to pass and which ones to not to pass. Afterwards, we enter some of those stories into a second round where we decide our 13 winners. Most of our judges are high school students, and we make sure to remove any identifying information from stories before giving them to our judges."]
+			"We have a judging team that works in two rounds. The initial round simply looks at stories and then determines which to pass and which ones to not to pass. Afterwards, we enter some of those stories into a second round where we decide our 13 winners. Most of our judges are high school students, and we make sure to remove any identifying information from stories before giving them to our judges."],
+		["How are submissions evaluated?", "Refer to our rubric <a href='/rubric'>here</a>."]
 	];
 
 	function setHeights(){
