@@ -1,7 +1,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
-
+<!-- prayer to the gods that cloudflare builds properly this time -->
 <div id="centered">
     <h1 id="title"><u>MEET THE TEAM!</u></h1>
     <img src="/team/team.png" id="team_photo">
