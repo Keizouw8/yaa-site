@@ -48,7 +48,15 @@ button{
 </style>
 
 <div id="container">
+<!-- code for the new custom form
     <div id="fall">
+        <img src="/fall.png" id="leaf">
+        <h1>Fall Term</h1>
+        <p>Submission Deadline: October 31st</p> 
+		<button onclick={() => window.open('/fallform', '_blank')}>Submit for Fall ↓</button> 
+    </div>
+-->
+        <div id="fall">
         <img src="/fall.png" id="leaf">
         <h1>Fall Term</h1>
         <p>Submission Deadline: October 31st</p> 

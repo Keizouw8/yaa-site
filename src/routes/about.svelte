@@ -9,7 +9,7 @@
 </div>
 <script lang="ts">
 	let currentImage = $state(1);
-	let length = 9;
+	let length = 14;
 	let currentTimeout: number | undefined = undefined;
 	
 	increment();

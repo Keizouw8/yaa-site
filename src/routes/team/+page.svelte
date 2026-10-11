@@ -4,7 +4,7 @@
 
 <div id="centered">
     <h1 id="title"><u>MEET THE TEAM!</u></h1>
-
+    <img src="/team/team.png" id="team_photo">
     <section class="team-section">
         <div class="team-container">
             <div class="team-card">
@@ -33,11 +33,100 @@
                     <p class="email">eahn@davidsonacademy.unr.edu</p>
                 </div>
             </div>
+
+            <div class="team-card">
+                <div class="image-box"><img src="/team/anton.jpeg"></div>
+                <div class="member-info">
+                    <h3>Anton Laus</h3>
+                    <p class="role">Judge</p>
+                </div>
+            </div>
+                        <div class="team-card">
+                <div class="image-box"><img src="/team/stella.jpeg"></div>
+                <div class="member-info">
+                    <h3>Stella Huang</h3>
+                    <p class="role">Judge</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/ana.jpeg"></div>
+                <div class="member-info">
+                    <h3>Ana Wang</h3>
+                    <p class="role">Judge</p>
+                </div>
+            </div>
+                        <div class="team-card">
+                <div class="image-box"><img src="/team/priya.jpeg"></div>
+                <div class="member-info">
+                    <h3>Priya Konduru</h3>
+                    <p class="role">Book Editor</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="image-box"><img src="/team/akhila.jpeg"></div>
+                <div class="member-info">
+                    <h3>Akhila Vuppalapati</h3>
+                    <p class="role">Book Editor</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/elise.jpeg"></div>
+                <div class="member-info">
+                    <h3>Elise Church</h3>
+                    <p class="role">Book Editor</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/wyatt.png"></div>
+                <div class="member-info">
+                    <h3>Wyatt Abrahamson</h3>
+                    <p class="role">General Timekeeper</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/melania.jpeg"></div>
+                <div class="member-info">
+                    <h3>Melania Plyaskevich</h3>
+                    <p class="role">Judge</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/kalyani.jpeg"></div>
+                <div class="member-info">
+                    <h3>Kalyani Pagilla</h3>
+                    <p class="role">Judge</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/ashley.jpeg"></div>
+                <div class="member-info">
+                    <h3>Ashley Wu</h3>
+                    <p class="role">Treasurer</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/angie.jpeg"></div>
+                <div class="member-info">
+                    <h3>Angie Yu</h3>
+                    <p class="role">Judge Coordinator</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/eliana.jpeg"></div>
+                <div class="member-info">
+                    <h3>Eliana Manna</h3>
+                    <p class="role">Judge</p>
+                </div>
+            </div>
         </div>
     </section>
 </div>
 
 <style>
+    #team_photo {
+        width:80vw;
+    }
     #title {
         font-family: "Castoro Titling", serif;
         font-weight: 400;
