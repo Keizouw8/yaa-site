@@ -119,6 +119,20 @@
                     <p class="role">Judge</p>
                 </div>
             </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/mason.jpg"></div>
+                <div class="member-info">
+                    <h3>Mason Maalouf</h3>
+                    <p class="role">Treasurer</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-box"><img src="/team/logan.png"></div>
+                <div class="member-info">
+                    <h3>Logan Vimalaraj</h3>
+                    <p class="role">Web Developer</p>
+                </div>
+            </div>
         </div>
     </section>
 </div>
