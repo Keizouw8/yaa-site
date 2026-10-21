@@ -133,6 +133,13 @@
                     <p class="role">Web Developer</p>
                 </div>
             </div>
+             <div class="team-card">
+                <div class="image-box"><img src="/team/edwin.png"></div>
+                <div class="member-info">
+                    <h3>Edwin Escobar</h3>
+                    <p class="role">Judge</p>
+                </div>
+            </div>
         </div>
     </section>
 </div>
